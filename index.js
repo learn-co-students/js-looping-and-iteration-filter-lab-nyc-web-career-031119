@@ -1,17 +1,13 @@
+
+
 function findMatching(drivers, name) {
-  let filtered = drivers.filter(function(driver) {
-    // debugger
-    return name.toLowerCase() === driver.toLowerCase();
-  });
-  return filtered;
+  return drivers.filter(driver => name.toLowerCase() === driver.toLowerCase());
 }
 
 function fuzzyMatch(drivers, chars) {
-  let filtered = drivers.filter(driver => driver.startsWith(chars));
-  return filtered;
+  return drivers.filter(driver => driver.startsWith(chars));
 }
 
 function matchName(drivers, name) {
-  let filtered = drivers.filter(driver => driver.name === name);
-  return filtered;
+  return drivers.filter(driver => driver.name === name);
 }
